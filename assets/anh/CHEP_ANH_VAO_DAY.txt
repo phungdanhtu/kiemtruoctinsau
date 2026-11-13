@@ -1,0 +1,4 @@
+Chép ảnh nhóm tác giả làm sản phẩm vào thư mục này (ví dụ 01.jpg, 02.jpg),
+rồi khai báo trong config.js: { src: "assets/anh/01.jpg", chuThich: "..." }.
+Nên thu nhỏ ảnh còn khoảng 1600 điểm ảnh chiều ngang cho trang tải nhanh.
+Chỉ đăng ảnh khi gia đình hai bạn đã đồng ý.

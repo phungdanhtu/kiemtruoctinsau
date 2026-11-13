@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hộp đèn Kiểm trước - Tin sau</title>
+<meta name="description" content="Học cụ giúp học sinh tiểu học và người thân tập thói quen Dừng - Kiểm - Hỏi trước tin nhắn, cuộc gọi, đường link lạ và câu trả lời của AI.">
+<meta name="theme-color" content="#3f9e7c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='14' y='2' width='36' height='60' rx='12' fill='%232f5d50'/%3E%3Ccircle cx='32' cy='16' r='8' fill='%23e5484d'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23f5b301'/%3E%3Ccircle cx='32' cy='48' r='8' fill='%2330a46c'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#hop-den">Bỏ qua, vào thử hộp đèn</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#">
+      <span class="mini-light" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>Kiểm trước - Tin sau</span>
+    </a>
+    <nav class="menu" aria-label="Mục lục">
+      <a href="#phien-ban">Hai phiên bản</a>
+      <a href="#hop-den">Thử hộp đèn</a>
+      <a href="#video">Video</a>
+      <a href="#hinh-anh">Hình ảnh</a>
+      <a href="#bo-the">Bộ thẻ</a>
+      <a href="#bat-loi-ai">Bắt lỗi AI</a>
+      <a href="#lap-rap">Lắp ráp</a>
+      <a href="#nhom">Nhóm tác giả</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="eyebrow">Cuộc thi Sáng tạo thanh thiếu niên nhi đồng tỉnh Quảng Ninh lần thứ XI, 2026-2027</p>
+      <h1>Hộp đèn “Kiểm trước - Tin&nbsp;sau”</h1>
+      <p class="lead">Học cụ giúp học sinh tiểu học và người thân tập thói quen kiểm tra thông tin, phòng tránh lừa đảo khi dùng mạng và trí tuệ nhân tạo.</p>
+      <ol class="steps3">
+        <li><b>Dừng</b><span>Chưa bấm link, chưa trả lời, chưa gửi gì.</span></li>
+        <li><b>Kiểm</b><span>Chọn 3 dấu hiệu, nhấn nút KIỂM.</span></li>
+        <li><b>Hỏi</b><span>Nhờ người lớn tin cậy xác nhận bằng cách khác.</span></li>
+      </ol>
+      <div class="cta">
+        <a class="btn primary" href="#hop-den">Thử hộp đèn</a>
+        <a class="btn ghost" href="#hop-den" data-mode="the">Chơi với thẻ tình huống</a>
+        <a class="btn ghost" href="#video">Xem video</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="pole">
+        <span class="bulb r"></span><span class="bulb y"></span><span class="bulb g"></span>
+      </div>
+      <p class="hero-cap">Đèn giao thông thành <b>đèn kiểm tin</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HAI PHIÊN BẢN ================= -->
+<section id="phien-ban" class="band alt">
+  <div class="wrap">
+    <h2>Hai phiên bản của hộp đèn</h2>
+    <p class="sub">Cùng một luật chọn đèn, cùng bộ thẻ tình huống. Phiên bản 1 dùng mạch công tắc, không cần lập trình. Phiên bản 2 thêm bảng điều khiển có vi điều khiển micro:bit.</p>
+
+    <div class="vers">
+      <article class="ver v1">
+        <div class="ver-head">
+          <span class="ver-tag">Phiên bản 1</span>
+          <span class="status ok">Phiên bản dự thi</span>
+        </div>
+        <h3>Nút công tắc</h3>
+        <div class="ver-art v1-art" aria-hidden="true">
+          <div class="mini-box">
+            <div class="mini-sw"><i></i><i class="up"></i><i></i></div>
+            <div class="mini-lamps"><b class="r"></b><b class="y"></b><b class="g"></b></div>
+            <span class="mini-kiem">KIỂM</span>
+          </div>
+        </div>
+        <ul class="ver-list">
+          <li><b>Chọn dấu hiệu:</b> gạt 3 công tắc sang CÓ hoặc KHÔNG.</li>
+          <li><b>Báo kết quả:</b> 3 đèn LED đỏ, vàng, xanh.</li>
+          <li><b>Cách chạy:</b> dòng điện đi qua các công tắc như đi qua các ngã rẽ (mạch cây quyết định), không cần lập trình.</li>
+          <li><b>Nguồn:</b> 3 pin AA (4,5 V).</li>
+        </ul>
+        <div class="ver-btns">
+          <a class="btn small" href="#hop-den" data-ver="1">Thử phiên bản 1</a>
+          <a class="btn small ghost" href="#lap-rap">Xem cách lắp</a>
+        </div>
+      </article>
+
+      <article class="ver v2">
+        <div class="ver-head">
+          <span class="ver-tag">Phiên bản 2</span>
+          <span class="status plan">Đang phát triển</span>
+        </div>
+        <h3>Bảng điều khiển</h3>
+        <figure class="ver-art">
+          <img src="assets/v2-thiet-ke-3d.jpg" alt="Hình 3D thiết kế bảng điều khiển: 3 nút xanh, nút KIỂM màu cam, ô màn hình micro:bit, lỗ loa và 3 đèn" loading="lazy">
+          <figcaption>Hình 3D theo bản thiết kế, chưa phải ảnh sản phẩm thật.</figcaption>
+        </figure>
+        <ul class="ver-list">
+          <li><b>Chọn dấu hiệu:</b> bấm 3 nút; bấm lần nữa để bỏ chọn.</li>
+          <li><b>Báo kết quả:</b> 3 đèn LED, màn hình micro:bit hiện biểu tượng và âm báo.</li>
+          <li><b>Cách chạy:</b> luật “nếu … thì …” được lập trình bằng khối lệnh MakeCode.</li>
+          <li><b>Kế hoạch:</b> hoàn thiện trước 20/12/2026.</li>
+        </ul>
+        <div class="ver-btns">
+          <a class="btn small" href="#hop-den" data-ver="2">Thử mô phỏng phiên bản 2</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="table-wrap">
+      <table class="cmp">
+        <caption>So sánh nhanh</caption>
+        <thead><tr><th></th><th>Phiên bản 1: Nút công tắc</th><th>Phiên bản 2: Bảng điều khiển</th></tr></thead>
+        <tbody>
+          <tr><th>Chọn dấu hiệu</th><td>3 công tắc gạt</td><td>3 nút bấm</td></tr>
+          <tr><th>Báo kết quả</th><td>3 đèn LED</td><td>3 đèn LED, biểu tượng trên màn hình, âm báo</td></tr>
+          <tr><th>Lập trình</th><td>Không cần</td><td>Khối lệnh MakeCode cho micro:bit</td></tr>
+          <tr><th>Học được gì</th><td>Cây quyết định, mạch điện đơn giản</td><td>Thêm: viết chương trình “nếu … thì …”</td></tr>
+          <tr><th>Trạng thái</th><td>Phiên bản dự thi</td><td>Đang phát triển</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MÔ PHỎNG ================= -->
+<section id="hop-den" class="band">
+  <div class="wrap">
+    <h2>Hộp đèn mô phỏng</h2>
+    <p class="sub" id="sim-sub">Mô phỏng đúng mạch của phiên bản 1: ba công tắc, một nút KIỂM, ba đèn. Gạt công tắc sang <b>CÓ</b> khi thấy dấu hiệu, rồi nhấn <b>KIỂM</b>.</p>
+
+    <div class="sim-bar">
+      <div class="seg" role="radiogroup" aria-label="Chọn phiên bản">
+        <button role="radio" aria-checked="true" data-ver="1">Phiên bản 1 · Công tắc</button>
+        <button role="radio" aria-checked="false" data-ver="2">Phiên bản 2 · Bảng điều khiển</button>
+      </div>
+      <div class="tabs" role="tablist">
+        <button role="tab" id="tab-tudo" aria-selected="true" data-mode="tudo">Thử tự do</button>
+        <button role="tab" id="tab-the" aria-selected="false" data-mode="the">Chơi với thẻ tình huống</button>
+      </div>
+    </div>
+
+    <div id="card-panel" class="card-panel" hidden>
+      <div class="card-face">
+        <div class="card-meta"><span id="card-kenh" class="chip"></span><span id="card-so" class="muted"></span></div>
+        <p id="card-text" class="card-text"></p>
+        <p class="card-ask" id="card-ask">Em thấy dấu hiệu nào? Chọn dấu hiệu rồi nhấn KIỂM.</p>
+      </div>
+      <div id="card-back" class="card-back" hidden>
+        <p id="card-verdict" class="verdict"></p>
+        <p><b>Đáp án:</b> <span id="card-dapan"></span></p>
+        <p><b>Vì sao:</b> <span id="card-lydo"></span></p>
+        <p><b>Em làm gì:</b> <span id="card-lam"></span></p>
+      </div>
+      <div class="card-bar">
+        <span id="score" class="muted">Đã chơi 0 thẻ</span>
+        <button id="next-card" class="btn small">Thẻ tiếp theo</button>
+      </div>
+    </div>
+
+    <div class="device-row">
+      <div class="device" id="device" aria-label="Mặt hộp đèn">
+        <p class="device-name" id="device-name">Phiên bản 1 · Nút công tắc</p>
+        <div class="device-top">
+          <div class="switches">
+            <div class="sw" data-k="1">
+              <span class="sw-num">1</span>
+              <button class="toggle" role="switch" aria-checked="false" aria-label="Dấu hiệu 1: Người lạ hoặc chưa rõ nguồn"><span class="knob"></span></button>
+              <span class="sw-state">KHÔNG</span>
+              <p class="sw-label">Người lạ hoặc chưa rõ nguồn</p>
+            </div>
+            <div class="sw" data-k="2">
+              <span class="sw-num">2</span>
+              <button class="toggle" role="switch" aria-checked="false" aria-label="Dấu hiệu 2: Đòi tiền, mã OTP, thông tin cá nhân hoặc giục làm gấp"><span class="knob"></span></button>
+              <span class="sw-state">KHÔNG</span>
+              <p class="sw-label">Đòi tiền, mã OTP, thông tin cá nhân hoặc giục gấp</p>
+            </div>
+            <div class="sw" data-k="3">
+              <span class="sw-num">3</span>
+              <button class="toggle" role="switch" aria-checked="false" aria-label="Dấu hiệu 3: Chưa có người tin cậy xác nhận"><span class="knob"></span></button>
+              <span class="sw-state">KHÔNG</span>
+              <p class="sw-label">Chưa có người tin cậy xác nhận</p>
+            </div>
+          </div>
+          <div class="out">
+            <div class="mb" id="mb-wrap" aria-hidden="true">
+              <div class="mb-board"><div class="mb-grid" id="mb"></div></div>
+              <span class="mb-cap">micro:bit</span>
+            </div>
+            <div class="lamps" aria-live="polite">
+              <div class="lamp-row"><span class="lamp red" id="lamp-ĐỎ"></span><span class="lamp-msg">Dừng! Không gửi tiền, mã hay thông tin. Báo người lớn.</span></div>
+              <div class="lamp-row"><span class="lamp yellow" id="lamp-VÀNG"></span><span class="lamp-msg">Chưa chắc chắn. Dừng lại và hỏi người tin cậy.</span></div>
+              <div class="lamp-row"><span class="lamp green" id="lamp-XANH"></span><span class="lamp-msg">Chưa thấy dấu hiệu lạ, nhưng còn phân vân hãy hỏi người lớn.</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="device-bottom">
+          <button id="kiem" class="kiem">KIỂM</button>
+          <div class="dev-tools">
+            <button id="am-thanh" class="btn small ghost-dark" aria-pressed="true" hidden>Âm báo: bật</button>
+            <button id="reset" class="btn small ghost-dark">Gạt về KHÔNG</button>
+          </div>
+        </div>
+        <p id="result-line" class="result-line" role="status">Chưa nhấn KIỂM.</p>
+      </div>
+
+      <figure class="tree-box" id="tree-box">
+        <figcaption>Đường đi của dòng điện (cây quyết định)</figcaption>
+        <svg id="tree" viewBox="0 0 640 320" role="img" aria-label="Sơ đồ cây quyết định của mạch">
+          <g class="edges">
+            <path id="e-k-s2" d="M70 165 H150"/>
+            <path id="e-s2-red" d="M185 140 V45 H570"/>
+            <path id="e-s2-s1" d="M210 165 H270 V215 H300"/>
+            <path id="e-s1-s3b" d="M340 195 V125 H410"/>
+            <path id="e-s1-s3a" d="M340 235 V270 H410"/>
+            <path id="e-s3b-red" d="M470 112 H520 V60 H570"/>
+            <path id="e-s3b-yel" d="M470 138 H520 V175 H570"/>
+            <path id="e-s3a-yel" d="M470 258 H530 V185 H570"/>
+            <path id="e-s3a-grn" d="M470 282 H570"/>
+          </g>
+          <g class="lbls">
+            <text x="192" y="100">CÓ</text><text x="222" y="158">KHÔNG</text>
+            <text x="346" y="160">CÓ</text><text x="346" y="258">KHÔNG</text>
+            <text x="478" y="105">CÓ</text><text x="478" y="152">KHÔNG</text>
+            <text x="478" y="251">CÓ</text><text x="478" y="297">KHÔNG</text>
+          </g>
+          <g class="nodes">
+            <rect id="n-k" x="6" y="145" width="64" height="40" rx="8"/><text x="38" y="170">KIỂM</text>
+            <rect id="n-s2" x="150" y="140" width="60" height="50" rx="25"/><text x="180" y="170">CT 2</text>
+            <rect id="n-s1" x="300" y="195" width="60" height="40" rx="20"/><text x="330" y="220">CT 1</text>
+            <rect id="n-s3b" x="410" y="105" width="60" height="40" rx="20"/><text x="440" y="130">CT 3b</text>
+            <rect id="n-s3a" x="410" y="250" width="60" height="40" rx="20"/><text x="440" y="275">CT 3a</text>
+          </g>
+          <g class="tl">
+            <circle id="t-red" cx="595" cy="52" r="22" class="c-red"/>
+            <circle id="t-yel" cx="595" cy="180" r="22" class="c-yel"/>
+            <circle id="t-grn" cx="595" cy="282" r="22" class="c-grn"/>
+          </g>
+        </svg>
+        <p class="tree-note">CT 3a và CT 3b là hai tầng của <b>cùng một công tắc 3</b>, gạt cùng lúc. Mỗi lần nhấn KIỂM chỉ một đèn sáng.</p>
+      </figure>
+
+      <figure class="code-box" id="code-box" hidden>
+        <figcaption>Chương trình của micro:bit (khối lệnh “nếu … thì …”)</figcaption>
+        <div class="blocks">
+          <div class="blk evt">khi nhấn nút <b>KIỂM</b></div>
+          <div class="blk if" id="c-1"><span class="kw">nếu</span> có dấu hiệu 2 <span class="kw">hoặc</span> (có dấu hiệu 1 <span class="kw">và</span> dấu hiệu 3) <span class="kw">thì</span>
+            <div class="blk act">bật đèn <b class="t-r">ĐỎ</b>, hiện dấu ✗, kêu 3 tiếng trầm</div></div>
+          <div class="blk if" id="c-2"><span class="kw">nếu không, nếu</span> có dấu hiệu 1 <span class="kw">hoặc</span> dấu hiệu 3 <span class="kw">thì</span>
+            <div class="blk act">bật đèn <b class="t-y">VÀNG</b>, hiện mặt băn khoăn, kêu 2 tiếng</div></div>
+          <div class="blk if" id="c-3"><span class="kw">nếu không thì</span>
+            <div class="blk act">bật đèn <b class="t-g">XANH</b>, hiện dấu ✓, kêu 1 tiếng cao</div></div>
+        </div>
+        <p class="tree-note">Bấm một nút để chọn dấu hiệu, bấm lần nữa để bỏ chọn. Sau khi có kết quả, bấm nút bất kỳ là bắt đầu lượt mới. Đây là mô phỏng theo thiết kế; phiên bản 2 đang được phát triển.</p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VIDEO ================= -->
+<section id="video" class="band alt">
+  <div class="wrap">
+    <h2>Video</h2>
+    <p class="sub">Hai bạn Khánh và Hà giới thiệu sản phẩm và hướng dẫn cách dùng hộp đèn.</p>
+    <div class="vids">
+      <article class="vid">
+        <div class="vid-frame" data-video="videoHuongDan" data-title="Video hướng dẫn sử dụng"></div>
+        <h3>Video hướng dẫn sử dụng</h3>
+        <ul class="vid-list">
+          <li>Ba bước Dừng - Kiểm - Hỏi.</li>
+          <li>Đọc thẻ, chọn dấu hiệu, nhấn KIỂM, đọc lời nhắc cạnh đèn.</li>
+          <li>Cách chơi theo nhóm trong lớp và ở nhà.</li>
+        </ul>
+      </article>
+      <article class="vid">
+        <div class="vid-frame" data-video="videoThuyetTrinh" data-title="Video thuyết trình sản phẩm"></div>
+        <h3>Video thuyết trình sản phẩm</h3>
+        <ul class="vid-list">
+          <li>Vì sao nhóm làm hộp đèn.</li>
+          <li>Hộp đèn được làm như thế nào, chạy ra sao.</li>
+          <li>Kết quả chơi thử và hướng phát triển.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HÌNH ẢNH ================= -->
+<section id="hinh-anh" class="band">
+  <div class="wrap">
+    <h2>Hình ảnh nhóm tác giả làm sản phẩm</h2>
+    <p class="sub">Những khoảnh khắc Khánh và Hà cùng tìm hiểu, lắp ráp và chơi thử hộp đèn.</p>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" id="lb-close" aria-label="Đóng">×</button>
+  <img id="lb-img" alt="">
+  <p id="lb-cap"></p>
+</div>
+
+<!-- ================= BỘ THẺ ================= -->
+<section id="bo-the" class="band alt">
+  <div class="wrap">
+    <h2>Bộ 40 thẻ in</h2>
+    <div class="cols">
+      <div>
+        <p>Bộ thẻ dùng chung cho cả hai phiên bản, in trên giấy A4 hai mặt (20 trang):</p>
+        <ul class="ticks">
+          <li><b>8 thẻ hướng dẫn:</b> ba bước Dừng - Kiểm - Hỏi, luật của hộp đèn, cách chơi, lời hứa của em và 2 thẻ để em tự viết tình huống.</li>
+          <li><b>24 thẻ tình huống:</b> tin nhắn, cuộc gọi, nhóm lớp, người lạ ở cổng, ứng dụng, đường link.</li>
+          <li><b>8 thẻ Bắt lỗi AI:</b> đọc câu AI nói, đoán đúng hay sai, rồi đối chiếu nguồn khác.</li>
+        </ul>
+        <p class="muted small">Mọi tình huống là giả lập, không dùng tên hay số điện thoại của người thật. In mặt trước và mặt sau theo kiểu lật cạnh dài, rồi cắt theo đường viền.</p>
+        <a class="btn primary" id="link-bo-the" href="#" target="_blank" rel="noopener">Tải bản in 40 thẻ (Google Drive)</a>
+        <p class="muted small" id="link-bo-the-note" hidden>Đường link Google Drive đang được cập nhật.</p>
+      </div>
+      <figure class="cards-prev">
+        <img src="assets/xem-truoc-bo-the.jpg" alt="Xem nhanh mặt trước của 40 thẻ: thẻ hướng dẫn, thẻ tình huống và thẻ Bắt lỗi AI" loading="lazy">
+        <figcaption>Xem nhanh mặt trước của 40 thẻ.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BẮT LỖI AI ================= -->
+<section id="bat-loi-ai" class="band">
+  <div class="wrap">
+    <h2>Trò chơi “Bắt lỗi AI”</h2>
+    <p class="sub">AI có thể trả lời sai. Đọc câu trả lời của AI, đoán xem đúng hay sai, rồi xem cách kiểm tra lại.</p>
+    <div class="ai-card">
+      <div class="ai-head"><span class="chip dark">AI trả lời</span><span id="ai-so" class="muted"></span></div>
+      <p id="ai-text" class="ai-text"></p>
+      <div class="ai-btns">
+        <button class="btn" data-ai="true">AI nói đúng</button>
+        <button class="btn" data-ai="false">AI nói sai</button>
+      </div>
+      <div id="ai-back" class="ai-back" hidden>
+        <p id="ai-verdict" class="verdict"></p>
+        <p id="ai-giaithich"></p>
+        <p><b>Cách kiểm tra:</b> <span id="ai-kiemtra"></span></p>
+        <button id="ai-next" class="btn small">Thẻ tiếp theo</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NGUYÊN LÝ ================= -->
+<section id="nguyen-ly" class="band alt">
+  <div class="wrap">
+    <h2>Nguyên lý: luật “nếu … thì …”</h2>
+    <div class="cols">
+      <div>
+        <p>Ba dấu hiệu nghi ngờ ứng với ba công tắc (phiên bản 1) hoặc ba nút (phiên bản 2). Hộp chọn đèn theo luật:</p>
+        <ul class="rules">
+          <li><span class="dot red"></span><b>ĐỎ</b> nếu có dấu hiệu 2, hoặc có cả dấu hiệu 1 và 3.</li>
+          <li><span class="dot yellow"></span><b>VÀNG</b> nếu chỉ có dấu hiệu 1, hoặc chỉ có dấu hiệu 3.</li>
+          <li><span class="dot green"></span><b>XANH</b> nếu không có dấu hiệu nào.</li>
+        </ul>
+        <p><b>Phiên bản 1</b> không cần lập trình: công tắc 2 ở phía CÓ dẫn thẳng tới đèn đỏ; nếu không, công tắc 1 chọn một trong hai tầng của công tắc 3.</p>
+        <p><b>Phiên bản 2</b> viết cùng luật đó bằng khối lệnh “nếu … thì … nếu không …” cho micro:bit.</p>
+        <p class="muted">Đèn xanh không có nghĩa là tuyệt đối an toàn. Còn phân vân thì hỏi người lớn.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="truth">
+          <caption>Đủ 8 cách chọn dấu hiệu</caption>
+          <thead><tr><th>Dấu hiệu 1</th><th>Dấu hiệu 2</th><th>Dấu hiệu 3</th><th>Đèn</th></tr></thead>
+          <tbody id="truth-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LẮP RÁP ================= -->
+<section id="lap-rap" class="band">
+  <div class="wrap">
+    <h2>Lắp ráp phiên bản 1</h2>
+    <p class="sub">Linh kiện phổ thông, nguồn pin 4,5 V, không dùng điện lưới.</p>
+    <div class="cols">
+      <div>
+        <h3>Linh kiện</h3>
+        <ul class="parts">
+          <li>Đế pin 3 × AA và 3 pin (4,5 V)</li>
+          <li>1 nút nhấn nhả (nút KIỂM)</li>
+          <li>2 công tắc gạt 3 chân (một tầng) cho công tắc 1 và 2</li>
+          <li>1 công tắc gạt 6 chân (hai tầng) cho công tắc 3</li>
+          <li>3 đèn LED đỏ, vàng, xanh và 3 điện trở 150 Ω</li>
+          <li>Dây điện, băng dính điện hoặc dây cá sấu; vỏ hộp bìa carton</li>
+        </ul>
+        <h3>Các bước</h3>
+        <ol class="howto">
+          <li>Nối thử trên bàn theo sơ đồ: pin → nút KIỂM → công tắc 2 → công tắc 1 → công tắc 3 → đèn → điện trở → dây âm chung về pin.</li>
+          <li>Thử đủ 8 cách gạt công tắc, so với bảng ở mục Nguyên lý.</li>
+          <li>Gắn công tắc, nút, đèn vào mặt hộp; dán nhãn CÓ / KHÔNG và số 1, 2, 3.</li>
+          <li>Trang trí hộp, in chữ lớn ba bước Dừng - Kiểm - Hỏi.</li>
+        </ol>
+        <p class="safe"><b>An toàn:</b> chỉ dùng pin 4,5 V. Dao, kéo, mỏ hàn do người lớn dùng. Tháo pin khi cất hộp.</p>
+        <a class="btn" href="tai-lieu/huong-dan-lap-rap.pdf" target="_blank" rel="noopener">Tải hướng dẫn lắp ráp (PDF)</a>
+        <p class="muted small" style="margin-top:12px">Hướng dẫn lắp phiên bản 2 sẽ cập nhật khi hoàn thiện.</p>
+      </div>
+      <figure class="schem">
+        <a href="assets/so-do-mach.png" target="_blank" rel="noopener"><img src="assets/so-do-mach.png" alt="Sơ đồ mạch cây quyết định: pin, nút KIỂM, ba công tắc, ba đèn LED và điện trở" loading="lazy"></a>
+        <figcaption>Sơ đồ mạch (bấm để xem lớn). NO = phía CÓ, NC = phía KHÔNG.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DẠY HỌC ================= -->
+<section id="day-hoc" class="band alt">
+  <div class="wrap">
+    <h2>Dùng trong lớp học và gia đình</h2>
+    <div class="grid3">
+      <article class="tile">
+        <h3>Cách chơi 15 phút</h3>
+        <ol>
+          <li>Người dẫn rút một thẻ tình huống, đọc to.</li>
+          <li>Cả nhóm nói dấu hiệu, chọn dấu hiệu trên hộp.</li>
+          <li>Nhấn KIỂM, đọc lời nhắc cạnh đèn.</li>
+          <li>Lật thẻ, so đáp án, nói cách hỏi người tin cậy.</li>
+          <li>Đưa hộp về lượt mới.</li>
+        </ol>
+      </article>
+      <article class="tile">
+        <h3>Gắn với bài học</h3>
+        <ul>
+          <li>Tin học 3: cấu trúc “nếu … thì …”, cây quyết định.</li>
+          <li>Giáo dục AI lớp 3: tự đặt câu hỏi trước khi dùng AI, kiểm tra kết quả của AI.</li>
+          <li>Năng lực số: an toàn, bảo vệ thông tin cá nhân.</li>
+          <li>Hoạt động trải nghiệm, Đạo đức.</li>
+        </ul>
+      </article>
+      <article class="tile">
+        <h3>Ở nhà, ở khu dân cư</h3>
+        <ul>
+          <li>“Cháu hướng dẫn ông bà”: cùng chơi các thẻ về cuộc gọi xin mã OTP, tin nhắn nhờ chuyển tiền gấp.</li>
+          <li>Không cần mạng, tài khoản hay máy tính.</li>
+          <li>Không thu thập, không lưu thông tin cá nhân của người chơi.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NHÓM ================= -->
+<section id="nhom" class="band">
+  <div class="wrap">
+    <h2>Nhóm tác giả</h2>
+    <div class="team">
+      <div class="person"><span class="avatar">K</span><div><b>Phùng Ngô Bảo Khánh</b><span>Lớp 3A8, trưởng nhóm</span></div></div>
+      <div class="person"><span class="avatar a2">H</span><div><b>Nguyễn Ngọc Hà</b><span>Lớp 3A4</span></div></div>
+    </div>
+    <p>Trường Tiểu học Cao Thắng, phường Hà Lầm, thành phố Quảng Ninh. Người hỗ trợ: thầy Phùng Danh Tú.</p>
+    <p class="muted small">Trợ lý AI Claude (Anthropic) được người lớn dùng để soạn bản nháp tài liệu, tình huống, sơ đồ mạch, hình 3D thiết kế phiên bản 2 và trang này; nhóm tác giả và người lớn kiểm tra, chỉnh sửa, tự lắp ráp và chạy thử sản phẩm. Mọi tình huống trong thẻ là giả lập. Hình ảnh và video của học sinh được đăng khi gia đình đồng ý. Trang không dùng cookie, không thu thập dữ liệu.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">Hộp đèn “Kiểm trước - Tin sau” · Phiên bản 1: nút công tắc · Phiên bản 2: bảng điều khiển (đang phát triển) · 2026</div>
+</footer>
+
+<script src="config.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
